@@ -1,0 +1,11 @@
+* Odin Restaurant Page
+  [Assignment Outline]{https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page}
+  = TOC
+
+** Project Objective
+   Pratice/demonstate the use of ES6 Modules and Webpack. Additionally, we are going to practice DOM manipulation. Therefore, going to be using JS alone to generate contents, plus CSS to style.
+
+** Outline Commentary
+   ~ Setting up the project was simple.
+   ~ Choosing to let `dist/index.html` be handled by *webpack*.
+   ~ Also, choosing to use *webpack-dev-server* in place of `npx webpack --watch`.
