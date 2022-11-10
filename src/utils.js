@@ -1,4 +1,4 @@
-function createElement(tagName, elementId, elementClasses) {
+function createElement(tagName, elementClasses, elementId) {
   const element = document.createElement(tagName);
   if (elementId) element.setAttribute("id", elementId);
   if (elementClasses) {
