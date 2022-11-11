@@ -1,10 +1,10 @@
-function createElement(tagName, elementClasses, elementId) {
+function createElement(tagName, attributes) {
   const element = document.createElement(tagName);
-  if (elementId) element.setAttribute("id", elementId);
-  if (elementClasses) {
-    for (let className of elementClasses) {
-      element.classList.add(className);
-    }
+
+  if (attributes) {
+    Object.entries(attributes).map(([key, value]) => {
+      element.setAttribute(key, value);
+    });
   }
 
   return element;
