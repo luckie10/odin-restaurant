@@ -1,10 +1,19 @@
-function content() {
-  const element = document.createElement("div");
+import { createElement } from "./utils.js";
+import "./style.scss";
 
-  element.id = "content";
-  element.innerText = "Hello";
+import navBar from "./components/navigation.js";
 
-  return element;
-}
+const content = createElement("div", { id: "content" });
+const header = createElement("header");
+const hero = createElement("div", { class: "hero" });
+const title = createElement("h1", { class: "title" });
+const mission = createElement("p", { class: "mission" });
 
-document.body.appendChild(content());
+title.textContent = "Lorem ipsum dolor sit amet";
+mission.textContent =
+  "Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia.";
+
+hero.append(title, mission);
+header.append(navBar, hero);
+content.appendChild(header);
+document.body.appendChild(content);
