@@ -1,4 +1,5 @@
 import { createElement } from "../utils";
+import "./navigation.scss";
 
 const navContainer = createElement("div", { class: "nav-container" });
 const siteName = createElement("div", {

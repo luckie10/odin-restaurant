@@ -1,0 +1,44 @@
+@use "~Styles/utils";
+
+.nav-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.site-name {
+  color: utils.$white;
+  font-size: 3rem;
+  font-family: Lobster-Regular;
+}
+
+.navigation {
+  color: utils.$white;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 20px;
+  font-size: 1.3rem;
+}
+
+.hero {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: utils.$white;
+  gap: 30px;
+}
+
+.title {
+  font-family: Lobster-Regular;
+}
+
+.mission {
+  max-width: 500px;
+}
