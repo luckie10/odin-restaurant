@@ -1,5 +1,5 @@
 import { createElement } from "./utils.js";
-import "./style.scss";
+import "Styles/style.scss";
 
 import navBar from "./components/navigation.js";
 
