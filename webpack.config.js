@@ -3,8 +3,9 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
+  context: path.resolve(__dirname, "./src/"),
   entry: {
-    index: "./src/index.js",
+    index: "./index.js",
   },
   devtool: "inline-source-map",
   devServer: {
@@ -39,5 +40,13 @@ module.exports = {
         type: "asset/resource",
       },
     ],
+  },
+  resolve: {
+    alias: {
+      Components: path.resolve(__dirname, "src/components/"),
+      Assets: path.resolve(__dirname, "src/assets/"),
+      Styles: path.resolve(__dirname, "src/styles"),
+    },
+    // roots: [path.resolve(__dirname, "./src")],
   },
 };
