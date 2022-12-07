@@ -2,6 +2,7 @@ import { createElement } from "./utils.js";
 import "Styles/style.scss";
 
 import navBar from "./components/navigation.js";
+import footer from "./components/footer.js";
 
 const content = createElement("div", { id: "content" });
 const header = createElement("header");
@@ -15,5 +16,5 @@ mission.textContent =
 
 hero.append(title, mission);
 header.append(navBar, hero);
-content.appendChild(header);
+content.append(header, footer);
 document.body.appendChild(content);
