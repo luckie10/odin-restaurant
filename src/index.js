@@ -3,9 +3,12 @@ import "Styles/style.scss";
 
 import header from "./components/header.js";
 import footer from "./components/footer.js";
-import mainWrapper from "./pages/home.js";
+import home from "./pages/home.js";
 
 const content = createElement("div", { id: "content" });
+const main = createElement("div", { class: "main" });
 
-content.append(header, mainWrapper, footer);
+main.appendChild(home);
+
+content.append(header, main, footer);
 document.body.appendChild(content);

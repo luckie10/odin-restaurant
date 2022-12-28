@@ -1,0 +1,28 @@
+.home-wrapper {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.card {
+  padding: 40px 0;
+  display: flex;
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+.card-img {
+  width: 500px;
+}
+
+.content-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 30px;
+}
+
+.card-name {
+  text-transform: capitalize;
+}

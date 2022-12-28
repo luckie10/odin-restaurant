@@ -1,20 +1,30 @@
 import { createElement } from "../utils.js";
+import { images } from "../assets/assets.js";
 
-const mainWrapper = createElement("div", { class: "main-wrapper" });
+import "./home.scss";
+
+const home = createElement("div", { class: "home-wrapper" });
 
 function generateCard(name) {
   const card = createElement("div", { class: "card" });
-  const img = createElement("img", { class: "card-img" });
-  const header = createElement("h3", { class: "card-name", textContent: name });
+  const img = createElement("img", { class: "card-img", src: images[name] });
+  const contentWrap = createElement("div", { class: "content-wrap" });
+  const header = createElement("h2", { class: "card-name", textContent: name });
   const text = createElement("div", {
     class: "card-text",
     textContent:
       "Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.",
   });
 
-  card.append(img, header, text);
+  contentWrap.append(header, text);
+  card.append(img, contentWrap);
   return { card };
 }
 
-mainWrapper.append(generateCard("test").card);
-export default mainWrapper;
+const cards = ["sandwich", "croissant", "avocado"];
+
+for (let card of cards) {
+  home.append(generateCard(card).card);
+}
+
+export default home;
