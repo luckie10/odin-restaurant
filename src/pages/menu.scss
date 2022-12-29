@@ -1,0 +1,35 @@
+.menu-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  // background-color: grey;
+  padding: 20px;
+}
+
+.menu-section {
+  // background-color: #202324;
+  // color: white;
+}
+
+.menu-section-header {
+  text-align: center;
+  background-color: grey;
+  border: 1px solid black;
+  padding: 20px 0;
+}
+
+.menu-section-content {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.menu-item {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+}
+
+.menu-item-desc {
+  padding-top: 20px;
+  grid-column: 1/3;
+}
