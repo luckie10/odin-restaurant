@@ -1,0 +1,30 @@
+.contact-wrapper {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.contact-header {
+  text-align: center;
+  padding: 20px;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.contact-phone-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-map-wrapper {
+  text-align: center;
+}
+
+.contact-map {
+  width: 600px;
+}
