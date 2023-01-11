@@ -21,6 +21,10 @@ const contactPhone = createElement("p", {
   class: "contact-phone",
   textContent: "###-###-####",
 });
+const contactEmail = createElement("p", {
+  class: "contact-email",
+  textContent: "luka@lukasbakery.fake",
+});
 const contactMapWrapper = createElement("div", {
   class: "contact-map-wrapper",
 });
@@ -33,7 +37,7 @@ const contactMap = createElement("img", {
   src: images.map,
 });
 
-contactPhoneWrapper.append(contactName, contactPhone);
+contactPhoneWrapper.append(contactName, contactPhone, contactEmail);
 contactMapWrapper.append(contactMap, contactAddress);
 contactContent.append(contactPhoneWrapper, contactMapWrapper);
 contact.append(contactHeader, contactContent);

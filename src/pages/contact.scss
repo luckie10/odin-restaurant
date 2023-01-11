@@ -9,9 +9,9 @@
 }
 
 .contact-content {
-  display: flex;
-  justify-content: space-around;
-  padding: 30px;
+  // display: flex;
+  // justify-content: space-around;
+  // padding: 30px;
 }
 
 .contact-phone-wrapper {
@@ -19,10 +19,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 40px;
 }
 
 .contact-map-wrapper {
   text-align: center;
+  padding: 40px;
 }
 
 .contact-map {
