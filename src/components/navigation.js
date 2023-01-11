@@ -10,7 +10,7 @@ const navigation = createElement("ul", { class: "navigation" });
 
 function generateNavLinks(name) {
   const li = createElement("li");
-  const a = createElement("a", { textContent: name });
+  const a = createElement("a", { class: "nav-link", textContent: name });
 
   li.appendChild(a);
 
