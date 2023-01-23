@@ -30,7 +30,7 @@ loadPageContents();
 const links = document.querySelectorAll(".nav-link");
 
 links.forEach((link) => {
-  link.addEventListener("click", (e) => {
+  link.addEventListener("click", () => {
     const pageName = link.textContent;
 
     loadPageContents(pageName);
